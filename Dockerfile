@@ -1,5 +1,5 @@
 FROM devopsedu/webapp
-ADD target/hello.php /var/www/html
+ADD hello.php /var/www/html
 EXPOSE 8090
 
 
