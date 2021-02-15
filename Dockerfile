@@ -1,6 +1,6 @@
 FROM devopsedu/webapp
 ADD hello.php /var/www/html
-EXPOSE 8090
+EXPOSE 8080
 
 
 
