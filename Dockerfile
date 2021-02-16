@@ -1,7 +1,8 @@
 FROM devopsedu/webapp
+RUN apt-install lynx
 ADD hello.php /var/www/html
-EXPOSE 8080
-
+EXPOSE 80
+CMD ["apachectl", "-D", "FOREGROUND"]
 
 
 # Full list of versions available here: https://registry.hub.docker.com/_/php/tags/manage/
