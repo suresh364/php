@@ -1,5 +1,5 @@
 FROM devopsedu/webapp
-RUN apt-install lynx
+RUN apt-get -y install lynx
 ADD hello.php /var/www/html
 EXPOSE 80
 CMD ["apachectl", "-D", "FOREGROUND"]
